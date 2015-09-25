@@ -16,6 +16,6 @@ var main = function() {
       left: '0px'
     }, 200);
   });
-};
-
+o;
+  
 $(document).ready(main)
