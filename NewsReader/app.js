@@ -18,8 +18,5 @@ var main = function() {
       nextArticle.addClass('current');
     };
   });
-
-
-
 };
 $(document).ready(main);
