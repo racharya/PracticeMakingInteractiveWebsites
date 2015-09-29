@@ -25,5 +25,17 @@ var main = function() {
     nextSlide.addClass('active-slide');
 
   });
+
+  $('.arrow-prev').click(function() {
+    var currentSlide = $('.active-slide');
+    var prevSlide = currentSlide.prev();
+
+    currentSlide.fadeOut(600);
+    currentSlide.removeClass('active-slide');
+
+    prevSlide.fadeIn(600);
+    prevSlide.addClass('active-slide');
+
+  });
 };
 $(document).ready(main);
