@@ -15,6 +15,7 @@ var main = function() {
       nextDot = $('.dot').first();
 
     };
+
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
 
@@ -30,12 +31,19 @@ var main = function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
+    var currentDot = $('.active-dot');
+    var prevDot = currentDot.prev();
+
     if (prevSlide.length === 0) {
       prevSlide = $('.slide').last();
     };
 
+    currentDot.removeClass('active-dot');
+    prevDot.addClass('active-dot');
+
     currentSlide.fadeOut(600);
     currentSlide.removeClass('active-slide');
+
 
     prevSlide.fadeIn(600);
     prevSlide.addClass('active-slide');
