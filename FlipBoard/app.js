@@ -30,6 +30,10 @@ var main = function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
 
+    if (prevSlide.length === 0) {
+      prevSlide = $('.slide').last();
+    };
+
     currentSlide.fadeOut(600);
     currentSlide.removeClass('active-slide');
 
