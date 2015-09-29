@@ -12,6 +12,7 @@ var main = function() {
 
     if (nextSlide.length === 0) {
       nextSlide = $('.slide').first();
+      nextDot = $('.dot').first();
 
     };
     currentDot.removeClass('active-dot');
