@@ -36,6 +36,7 @@ var main = function() {
 
     if (prevSlide.length === 0) {
       prevSlide = $('.slide').last();
+      prevDot = $('.dot').last();
     };
 
     currentDot.removeClass('active-dot');
